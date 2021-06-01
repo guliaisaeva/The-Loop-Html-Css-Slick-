@@ -1,0 +1,42 @@
+@import "../vars";
+
+.cart {
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  & a {
+    text-decoration: none;
+  }
+  & img {
+    margin-right: 35px;
+  }
+  &__informer {
+    display: inline-block;
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: $light-color;
+    background-color: $accent-color;
+    padding-left: 10px;
+
+    padding: 0 10px;
+    padding-right: 10px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      margin-left: -19px;
+      margin-top: 68.5px;
+      width: 0;
+      height: 0;
+
+      border-top: 7px solid transparent;
+      border-right: 9px solid $accent-color;
+      border-bottom: 7px solid transparent;
+    }
+  }
+}

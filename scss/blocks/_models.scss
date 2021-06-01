@@ -1,0 +1,60 @@
+@import "../vars";
+
+.models {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 100px;
+
+  &__item {
+    position: relative;
+    padding: 25px;
+    border: 3px solid $accent-color;
+  }
+  &__item::before {
+    content: "";
+    left: 25px;
+    right: 25px;
+    top: -3px;
+    bottom: -3px;
+    position: absolute;
+    background-color: transparent;
+    border: 3px solid $light-color;
+  }
+  &__item::after {
+    content: "";
+    left: -3px;
+    right: -3px;
+    top: 25px;
+    bottom: 25px;
+    position: absolute;
+    border: 3px solid $light-color;
+  }
+
+  &__price {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $accent-color;
+  }
+  a {
+    text-decoration: none;
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $black;
+    display: block;
+    width: 112px;
+    text-align: center;
+    margin-left: 50px;
+  }
+}

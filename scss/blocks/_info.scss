@@ -1,0 +1,35 @@
+@import "../vars";
+
+.info {
+  background-color: $black;
+  color: $light-color;
+
+  &__inner {
+    max-width: 590px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  &__titile {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 23px;
+  }
+
+  &__title-span {
+    font-weight: 300;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+
+    text-align: center;
+  }
+}

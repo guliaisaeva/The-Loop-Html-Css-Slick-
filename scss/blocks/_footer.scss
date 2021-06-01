@@ -1,0 +1,82 @@
+@import "../vars";
+
+.footer {
+  &__info {
+    padding-top: 73px;
+    padding-bottom: 78px;
+    background-color: $dark-color;
+    color: $light-color;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 3fr 2fr;
+    justify-content: left;
+    grid-gap: 20px;
+
+    a {
+      text-decoration: none;
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 35px;
+      color: #cbcfd4;
+    }
+
+    h3 {
+      font-family: $main-font;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
+
+      text-transform: uppercase;
+      color: $light-color;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      text-align: left;
+    }
+
+    &__text {
+      margin-right: 200px;
+
+      &__column {
+        margin-left: 20px;
+      }
+
+      &__column:first-child {
+        margin-left: 30px;
+      }
+    }
+  }
+  &__copy-inner {
+    display: flex;
+    justify-content: space-between;
+    &__copy p {
+      width: 50%;
+    }
+
+    &__copy p:last-child {
+      text-align: right;
+    }
+  }
+  &__copy-text1 {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $black;
+  }
+  &__privacy {
+    text-decoration: none;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $black;
+  }
+}

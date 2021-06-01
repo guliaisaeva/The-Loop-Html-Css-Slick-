@@ -1,0 +1,116 @@
+@import "../vars";
+
+.slider {
+  background-color: $secondary-color;
+
+  // &__inner {
+  //
+  // }
+  &__item-inner {
+    position: relative;
+    display: flex;
+  }
+
+  &__text {
+    width: 50%;
+    a {
+      text-decoration: none;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      color: $light-color;
+      background-color: $accent-color;
+      display: inline-block;
+      padding: 17px 30px 18px 29px;
+    }
+  }
+  &__img {
+    width: 50%;
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: $black;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 35px;
+  }
+  &__promo {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: 0.04em;
+    color: $black;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 50px;
+    display: block;
+  }
+
+  &__price {
+    position: absolute;
+    max-width: 255px;
+    right: 0;
+  }
+  &__old-price,
+  &__new-price {
+    display: block;
+  }
+  &__old-price {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: $black;
+    padding-bottom: 14px;
+  }
+  &__new-price {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $red;
+  }
+
+  .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+
+  .slick-dots button {
+    font-size: 0;
+    border: none;
+    width: 40px;
+    height: 7px;
+    margin-right: 15px;
+    background-color: $accent-color;
+    cursor: pointer;
+  }
+  .slick-active button {
+    background-color: #cecece;
+  }
+}
